@@ -1,0 +1,446 @@
+* {
+  --primary-color: #F2231D;
+  --primary-color-rgb: 7242, 35, 29;
+  --secondary-color: #EAA638;
+  --secondary-color-rgb: 59, 157, 31;
+
+
+  --bg-light: #F5F8FF;
+  
+}
+
+
+.section-light {
+    background: var(--bg-light) ;
+}
+
+.service-card{
+  transition: all .3s ease;
+}
+
+
+
+
+
+.contact-form .form-control{
+height:54px;
+border-radius:10px;
+border:1px solid #E5E7EB;
+}
+
+.contact-form textarea.form-control{
+height:auto;
+min-height:130px;
+}
+
+.form-control:focus{
+   border-color: #F2231D !important;
+}
+
+#contact .badge{
+border-radius:30px;
+font-weight:500;
+}
+
+.card-shadow {
+  border-radius: 25px;
+  background: #fff;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.06),
+    0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+
+.b-sm{
+  border: 0.5px solid #e8e8e8;
+}
+
+ 
+          .condition-card {
+            padding: 30px 25px 30px;
+            background: #fff;
+            
+            border: 0.5px solid #e8e8e8;
+            transition: all 0.2s ease;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+          
+           
+
+          }
+
+          .condition-card:hover {
+            border-color: #d0d0d0;
+            transform: translateY(-3px);
+          }
+
+          .condition-card:hover::before {
+            opacity: 1;
+          }
+
+          .condition-icon-wrap > img {
+            width: 100px;
+          }
+
+          .condition-card p {
+            font-size: 12px;
+            font-weight: 500;
+            color: #666;
+            margin-top: 4px;
+          }
+          .condition-card-top {
+            display:flex;
+            flex-direction: column;
+            gap:10px;
+          }
+
+          .condition-card-top > h4{
+            font-size: 16px;
+            line-height: 24px;
+            color: #336;
+            margin-bottom: 0
+;
+          }
+          .hr-line{
+            border:1px solid #8b4c4c45;
+            margin-top: 14px;
+            margin-bottom: 14px;
+          }
+          .condition-card-bottom > p{
+            font-size: 14px;
+            line-height: 20px;
+            color: #4B5563;
+          }
+       
+.service-icon-wrap > img {
+            width: 60px;
+          }
+
+          .service-icon svg {
+            fill: #e53935;
+          }
+
+          #section-intro{
+            
+            /* border-bottom-left-radius: 46px;
+            border-bottom-right-radius: 46px; */
+          }
+
+
+
+           .fixed-contact-btns {
+        position: fixed;
+        top:50%;
+        right:20px;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+        z-index: 99;
+      }
+
+      .fixed-btn {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: transform 0.2s ease;
+      }
+
+      .fixed-btn:hover {
+        transform: scale(1.1);
+      }
+
+      /* WhatsApp Button */
+      .fixed-btn-whatsapp {
+        background-color: #25d366;
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+        animation: whatsapp-glow 2s infinite;
+      }
+
+      .fixed-btn-whatsapp svg {
+        width: 28px;
+        height: 28px;
+        fill: #fff;
+      }
+
+      @keyframes whatsapp-glow {
+        0% {
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+        }
+        50% {
+          box-shadow:
+            0 0 0 14px rgba(37, 211, 102, 0.15),
+            0 0 20px 6px rgba(37, 211, 102, 0.35);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+        }
+      }
+
+      /* Phone Button */
+      .fixed-btn-phone {
+        background-color: #1a73e8;
+        box-shadow: 0 4px 14px rgba(26, 115, 232, 0.4);
+      }
+
+      .fixed-btn-phone svg {
+        width: 26px;
+        height: 26px;
+        fill: #fff;
+      }
+
+
+
+
+      /* ===== Blog Section ===== */
+#blog {
+  position: relative;
+  z-index: 2;
+}
+
+.blog-swiper {
+  position: relative;
+  width: 100%;
+  padding: 10px 5px 40px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.blog-swiper .swiper-wrapper {
+  box-sizing: border-box;
+}
+
+.blog-swiper .swiper-slide {
+  height: auto;
+  box-sizing: border-box;
+}
+
+.blog-swiper .swiper-slide > .hover {
+  display: block;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.blog-card {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+   border: 0.5px solid #e8e8e8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+/* Fix: override global nowrap rules */
+.blog-card,
+.blog-card * {
+  white-space: normal !important;
+}
+
+.blog-card h5,
+.blog-card p,
+.blog-card .blog-meta {
+  white-space: normal !important;
+  word-break: break-word !important;
+  overflow-wrap: anywhere !important;
+}
+
+.blog-card .p-30 {
+  width: 100%;
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card h5,
+.blog-card p {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 0.75rem 0;
+}
+
+.blog-img-wrap {
+  position: relative;
+  width: 100%;
+  
+  overflow: hidden;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.blog-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+
+
+
+.blog-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 0.82rem;
+  color: #999;
+  flex-wrap: wrap;
+}
+
+.blog-meta i {
+  color: #c0392b;
+}
+
+.blog-readmore {
+  color: #c0392b;
+  font-weight: 600;
+  font-size: 0.92rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: gap 0.3s ease;
+  
+}
+
+.blog-readmore:hover {
+  gap: 6px;
+  color: #a8281b;
+}
+
+/* Pagination dots */
+.blog-pagination {
+  position: relative;
+  text-align: center;
+}
+
+.blog-pagination .swiper-pagination-bullet {
+  background: #ddd;
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+}
+
+.blog-pagination .swiper-pagination-bullet-active {
+  background: #c0392b;
+}
+
+/* Nav arrows */
+.swiper-nav-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c0392b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  background: #fff;
+}
+
+.swiper-nav-btn:hover {
+  background: #c0392b;
+  color: #fff;
+  border-color: #c0392b;
+}
+
+
+.social-icons  {
+  z-index: 100;
+}
+
+
+ .fixed-btn-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.fixed-btn-instagram i {
+  font-size: 22px;
+  color: #ffffff;
+}
+
+ 
+        .legal-section h2 {
+            font-size: 26px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: #c0392b;
+        }
+        .legal-section h2:first-of-type {
+            margin-top: 0;
+        }
+        .legal-section p,
+        .legal-section li {
+            color: #000;
+            line-height: 1.8;
+        }
+        .legal-section li  > a{
+            color: #000;
+        }
+        .legal-section ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        .legal-section ul li {
+            margin-bottom: 8px;
+            list-style: disc;
+        }
+        .legal-updated {
+            
+            color: #999;
+            margin-bottom: 30px;
+            display: block;
+        }
+        
+    
+
+
+@media (max-width: 768px) {
+  #meet-doctor img[alt*="Registered"] {
+    width: 80px !important;
+    
+    bottom: 10px !important;
+    right: 10px !important;
+  }
+  .gap-md{
+    gap:60px;
+  }
+
+   .fixed-contact-btns {
+        top:90%;
+        
+        right:20px !important;
+        
+        
+      }
+
+      .fixed-btn-instagram{
+        display: none;
+      }
+
+}
+
+
+  @media (min-width: 992px) {
+    .row.gx-5 {
+      align-items: flex-start;
+    }
+    .blog-sidebar-sticky {
+      position: sticky;
+      top: 100px;
+    }
+  }
