@@ -19,7 +19,7 @@
   --body-font: "Inter", Helvetica, Arial, sans-serif;
   --body-font-size: 16px;
   --body-font-color: #93a0af;
-  --body-font-color-dark: rgba(255, 255, 255, .6);
+  --body-font-color-dark: rgba(255, 255, 255, .8);
   --body-font-weight: 400;
   /* heading font */
   --heading-font: "Urbanist", Helvetica, Arial, sans-serif;  
@@ -3960,6 +3960,7 @@ h5 span.label {
 
 .text-light, .text-light p {
   color: var(--body-font-color-dark);
+  
 }
 
 .text-dark {
@@ -8245,7 +8246,12 @@ p.slider-teaser{
 } 
 
 .sw-overlay{
-  background: rgba(0, 0, 0, 0.7);
+  /* background: rgba(0, 0, 0, 0.7); */
+  
+    background: -webkit-linear-gradient(0deg, rgba(var(--bg-dark-1-rgb), .8) 0%, rgba(var(--bg-dark-1-rgb), .8) 50%);
+    background: -moz-linear-gradient(0deg, rgba(var(--bg-dark-1-rgb), .8) 0%, rgba(var(--bg-dark-1-rgb), .8) 50%);
+    background: linear-gradient(0deg, rgba(var(--bg-dark-1-rgb), .8) 0%, rgba(var(--bg-dark-1-rgb), .8) 50%);
+
 }
 
 .card-box-shadow{}
